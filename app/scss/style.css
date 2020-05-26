@@ -9,4 +9,15 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+
+a {
+  display: inline-block;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /*# sourceMappingURL=style.css.map */

@@ -111,13 +111,14 @@
     }
 }
 .basket {
+    
+    margin-right: 20px;
     span {
         background-color: $green;
     }
 }
 
 .user {
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -156,6 +157,8 @@
 .circle__menu {
     position: absolute;
     top: 69px;
+    z-index: 1;
+    
 }
 .user__box,
 .basket__box,
@@ -164,14 +167,12 @@
     position: relative;
     height: 80px;
     margin-top: 42px;
-    z-index: 1;
     &:hover {
         .circle__menu{
             height: auto;
             border-width: 1px;
             padding: 20px;
             overflow: auto;
-            z-index: 2;
         }
     }
 }
@@ -196,7 +197,9 @@
         margin-bottom: 15px;
     }      
 }
-
+.header__btn-menu {
+    display: none;
+    }
 .circle__menu {
     top: 40px;
     right: 0;
@@ -209,13 +212,14 @@
         color: #546e7a;
         margin-bottom: 15px;
         padding: 0px 20px;
-    }  
+    }
+      
 }
 .basket__box,
 .notification__box,
 .message__box{
     margin-top: 46px;
-    margin-left: 15px;
+    margin-left: 15px; 
     &:hover {
         .header__circle::before {
             color: $bg;
@@ -269,7 +273,7 @@
     font-size: 10px;
 }
 .basket__summ {
-    padding: 16px 17px 12px;
+    padding: 16px 17px 0px;
     border-top: none;
     background-color: #fff;
 }
@@ -1162,3 +1166,8 @@ button.icon-unsorted {
 }
 
 // end product-page
+
+
+
+
+@import 'media';

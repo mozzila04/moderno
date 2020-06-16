@@ -9,6 +9,7 @@
     .header__text {
         display: none;
     }
+
 }
 @media (max-width: 900px) {
     .footer__col-social{
@@ -57,12 +58,12 @@
                 }
             }
         }
-    }
     .menu__btn {
         display: block;
         width: 30px;
         cursor: pointer;
         div {
+            display: block;
             background-color: #fff;
             height: 3px;
             & + div {
@@ -70,7 +71,7 @@
             }
         }
     }
-
+}
 @media (max-width: 640px){
     .notification__box,
     .message__box {

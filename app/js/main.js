@@ -40,7 +40,8 @@ $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function(event) {
     $('#'+id).addClass('active-tab').fadeIn();
     return false;
   });
-  
+  $('input[type="file"], select').styler();
+
   var mixer = mixitup('.products__inner-box');
 });
 
